@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marijuana survey</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+    *, *::before, *::after { box-sizing: border-box; }
+    a { text-decoration: none; color: inherit; cursor: pointer; }
+    figure { margin: 0; }
+    input::-moz-focus-inner { border: 0; padding: 0; margin: 0; }
+    cite { font-style: normal; }
+    fieldset { border-width: 0; padding: 0; margin: 0; }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;}
+    input[type=number] {
+    -moz-appearance: textfield;
+    }
+
+    body {
+
+      /*background-image:url('https://serving.photos.photobox.com/01403638d2ed9a306c8b92ebb10c8c9878f9a324c464451cecbfd496126adb39274d29c8.jpg');*/
+      background-image: linear-gradient(90deg, rgba(0,140,28,0.50) 0%, rgba(0,140,28,0.50) 100%),url('https://serving.photos.photobox.com/67558295962e10df0dacc547eb85571ba2426c49c467e989451e06a866d284c1ce54468b.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      
+    }
+    
+    h1 {
+      text-align: center;
+      font-family: 'Cabin', sans-serif;
+      font-size: 3em;
+      color: white;
+      margin-top: 1%;
+      text-shadow: 0px 0px 12px rgba(0,0,0,0.81);
+
+    }
+    #description {
+      text-align: center;
+      font-family: 'Cabin', sans-serif;
+      font-style: italic;
+      color: white;
+      padding-bottom: 1em;
+      text-shadow: 0px 0px 12px rgba(0,0,0,0.81);
+
+    }
+    .box {
+      background-color: rgba(0, 41, 0, 0.9);
+      width: 45em;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 5%;
+      border-radius: 10px;
+      color: rgb(214, 214, 214);
+      padding:2%;
+      
+    }
+    .field {
+      width: 100%;
+      padding-top:3%;
+      padding-bottom: 3%;
+    }
+    label {
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.4em;
+      margin: 0;
+
+
+    }
+    p {
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.4em;
+      margin: 0;
+      padding-bottom: 2%;
+    }
+    #name, #email, #number, #dropdown {
+      border-radius: 10px;
+      border-style:none;
+      width: 100%;
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.1em;
+      margin-top: 2%;
+      padding: 2%;
+    }
+    #submit {
+      width: 50%;
+      border-radius: 50px;
+      border-style: solid;
+      border-width:medium;
+      border-color: rgb(197, 218, 197);
+      font-family: 'Cabin';
+      font-weight: bold;
+      font-size: 1.5em;
+      color: rgb(197, 218, 197);
+      padding: 1%;
+      background-color: transparent;
+    }
+    #submit:hover {
+      background-color: rgb(124, 172, 124);
+      color: white;
+    }
+    textarea {
+      border-radius: 10px;
+      border-style:none;
+      width: 100%;
+      height: 6em;
+      min-height: 6em;
+      min-width: 100%;
+      max-width: 100%;
+      font-family: 'Cabin', sans-serif;
+      font-size: 1.1em;
+      margin-top: 2%;
+      padding: 2%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1 id="title">Tippo's Survey Form</h1>
+  <p id="description">Please help me by filling this quick survey so that I can know how big of a piece of trash you are</p>
+ <div class="box">
+ <form action="" id="survey-form">
+
+   <div class="field">
+   <label for="name" id="name-label">Name</label><br>
+   <input type="text" id="name" name="name" placeholder="Enter your name" required >
+   </div>
+
+   <div class="field">
+   <label for="email" id="email-label">Email</label>
+   <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+   </div>
+
+   <div class="field">
+   <label for="number" id="number-label">Age</label>
+   <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+   </div>
+
+   <div class="field">
+   <p>Gender</p>
+   <input type="radio" id="male" value="male" name="gender">
+   <label for="male">Male</label><br>
+   <input type="radio" id="female" value="female" name="gender">
+   <label for="female">Female</label><br>
+   <input type="radio" id="other" value="other" name="gender">
+   <label for="other">Other</label>
+   </div>
+
+   <div class="field">
+   <label for="dropdown">How often do you smoke weed?</label>
+   <select name="frequency" id="dropdown" required>
+     <option disabled="" selected="" value="">Select an option</option>
+     <option value="day">Everyday</option>
+     <option value="week">Multiple times a week</option>
+     <option value="week2">Once a week</option>
+     <option value="occasional">Occasionally</option>
+     <option value="never">Never</option>
+   </select>
+   </div>
+
+   <div class="field">
+   <p>What kind of weed do you consume?</p>
+   <input type="checkbox" value="sativa" id="sativa" name="kind">
+   <label for="sativa">Sativa</label><br>
+   <input type="checkbox" value="indica" id="indica" name="kind">
+   <label for="indica">Indica</label><br>
+   <input type="checkbox" value="hash" id="hash" name="kind">
+   <label for="hash">Hash</label><br>
+   <input type="checkbox" value="other2" id="other2" name="kind">
+   <label for="other2">Other</label><br>
+   </div>
+
+   <div class="field">
+   <label for="comment">Do you have any comment?</label>
+   <textarea name="additional-comment" id="comment" placeholder="Additional comment..."></textarea>
+   </div>
+
+   <div class="field">
+   <center><button id="submit">Submit</button></center>
+   </div>
+
+ </form>
+ </div>
+
+</body>
+</html>
