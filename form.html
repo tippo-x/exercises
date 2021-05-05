@@ -23,6 +23,13 @@
     input:focus {
     outline: none;
 } 
+    @media (max-width: 700px) {
+      body {
+        background-size: fill;
+        background-attachment: fixed;
+        background-position: center;
+      }
+    }
     body {
 
       /*background-image:url('https://serving.photos.photobox.com/01403638d2ed9a306c8b92ebb10c8c9878f9a324c464451cecbfd496126adb39274d29c8.jpg');*/
@@ -89,6 +96,11 @@
       font-size: 1.1em;
       margin-top: 2%;
       padding: 2%;
+      background-color: white;
+    
+    }
+    #dropdown {
+      color: gray;
     }
     #submit {
       width: 50%;
