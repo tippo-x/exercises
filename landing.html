@@ -4,48 +4,194 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Weebllow by Tippo</title>
 </head>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300&display=swap');
 header {
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   z-index: 99;
-  background-color: gray;
+  background-color: rgb(255, 213, 174);
   width: 100%;
+  display: flex;
+}
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+#header-img {
+  height: 100px;
+  width: 300px;
+}
+.flex1 {
+  flex-basis: 30%;
+}
+.flex2 {
+  flex-basis: 40%;
+  align-self: center;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  color: rgb(77, 58, 25);
+}
+.flex3 {
+  flex-basis: 30%;
+  align-self: center;
+}
+#nav-bar {
+  text-align: right;
+  margin-right: 5%;
+}
+.nav-link {
+  text-align: center;
+}
+.mainbody {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  max-width: 90%;
+  width: 45em;
+}
+h2 {
+  margin-top: 110px;
 }
 iframe {
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   width: 560px; 
   height: 315px ;
   display: block;
 }
+.container-price {
+  display: flex;
+  max-width: 90%;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.price1 {
+  flex-basis: 100%;
+}
+.price2 {
+  flex: 1;
+}
+.price3 {
+  flex: 1;
+}
+.price1, .price2, .price3 {
+  border-style: solid;
+  padding:10px;
+  margin: 5px;
+  text-align: justify;
+}
+.container-review {
+  display: flex;
+  max-width: 100;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.review-box {
+  flex:1;
+  border-style: solid;
+  margin: 5px;
+  padding: 5px;
+}
+
 </style>
 <body>
 <header id="header">
-  <img id="header-img" src="" alt=""><!-- company logo -->
-  <nav id="nav-bar">
-    <a class="nav-link" href="#">lien 1</a>
-    <a class="nav-link" href="#">lien 2</a>
-    <a class="nav-link" href="#">lien 3</a>
-  </nav> <!--lien vers la partie de la page pertinente-->
+  <div class="flex1"> <img id="header-img" src="https://i.postimg.cc/CxygHnK8/weebpillow2.png" alt="Weebllow logo"></div>
+  <div class="flex2">Les meilleurs <b>DAKIMAKURA</b> du monde, sur ce site.</div>
+  <div class="flex3"> <nav id="nav-bar">
+    <a class="nav-link" href="#">Qui sommes nous ? |</a>
+    <a class="nav-link" href="#Features">Caractéristiques |</a>
+    <a class="nav-link" href="#">Tarifs |</a>
+    <a class="nav-link" href="#">Avis</a>
+  </nav></div> <!--lien vers la partie de la page pertinente-->
 </header>
+<div class="mainbody">
+<h2 id="who">Qui sommes nous ?</h2>
+<p>À l'origine de ce projet se trouve Tippo. Il est le fondateur de Weebllow mais est avant tout un grand passionné de dakimakura qu'il n'a cessé de collectionner pendant de nombreuses années. Au fil du temps, il a développé un oeil d'expert sur ce marché, ce qui lui a également permis de percevoir ses limites. Muni de sa passion et de son expertise, il a décidé de passer à l'action pour transcender le marché du dakimakura en proposant des produits d'une qualité sans précédent et a nommé sa marque Weebllow.</p>
+
+<a name="Features"><h2>Caractéristiques</h2></a>
+<h3>Personnalisation</h3>
+<p>En commandant un dakimakura Weebllow, vous pouvez bien sûr choisir votre personnage d'animé préféré mais pas seulement. Avec nous et seulement nous, vous pourrez choisir le type de textile et de rembourage qui vous convient le mieux.</p>
+<h3>Hautement qualitatif</h3>
+<p>Peu importe le choix de matière que vous ferez, nous vous garantissons de choisir les matériaux les plus qualitatif du marché. Nous avons également confiance en la durabilité de nos produits, et c'est pour cela que nous le garantissons pendant 2 ans.</p>
+<h3>Fabriqué en France</h3>
+<p>Bon alors bien sûr toute la production de tissus, rembourages et impressions de motifs se font à l'étranger mais vu qu'on assemble en France c'est français quoi.</p>
+
 <iframe 
    id="video"
-   src="https://www.youtube.com/embed/m9gLjW_4lXQ" 
+   src="https://www.youtube.com/embed/G8RpGoeOlGo" 
    title="video player" 
    frameborder="0" 
    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
    allowfullscreen></iframe>
+   <legend>Un weeb partage sa passion pour les dakimakura.</legend>
 
+<h2>Tarifs</h2>
+<p>pricing flex (1big and two small below)</p>
+<div class="container-price">
+  <div class="price1">
+    <h4>Starter</h4>
+    <ul>
+      <li>Important choix de matière</li>
+      <li>120 cm</li>
+      <li>Choix des waifus parmis celles de notre collection</li>
+    </ul>
+    <p class="price-tag">129 €</p>
+  </div>
+  <div class="price2">
+    <h4>Premium</h4> 
+    <ul>
+      <li>Important choix de matières</li>
+      <li>155 cm</li>
+      <li>Waifu personnalisée</li>
+    </ul>
+    <p class="price-tag">189 €</p>
+  </div>
+  <div class="price3">
+    <h4>Roi</h4>
+    <ul>
+      <li>Trou spécial pour <b>Tenga ®</b></li>
+      <li>155 cm</li>
+      <li>Possibilité de faire vibrer</li>
+    </ul>
+    <p class="price-tag">249 €</p>
+  </div>
+</div>
 <form action="https://www.freecodecamp.com/email-submit">
+  <p>Entrez votre adresse e-mail pour effectuer un achat maintenant !</p>
    <input id="email" type="email" placeholder="E-mail address">
    <input id="submit" type="submit">
 </form>
 
+<h2>Avis</h2>
+<div class="container-review">
+  <div class="review-box">
+    <p class="review-title">Un dakimakura royal</p>
+    <p class="review-content">"J'ai acheté un dakimakura 'Roi' et je ne regrette pas un seul instant. Je passe tout les jours des nuits de folie."</p><br>
+    <p class="review-date">posté le 11/1/1111</p>
+  </div>
+  <div class="review-box">
+    <p class="review-title">Une robustesse incroyable</p>
+    <p class="review-content">"J'ai mis la résistance des tissus à rude épreuve à maintes reprises et après chaque lavage mon dakimakura redevient comme neuf."</p>
+    <p class="review-date">posté le 11/1/1111</p>
+  </div>
+  <div class="review-box">
+    <p class="review-title">Dla balle</p>
+    <p class="review-content">"De la frappe ce dakimakura"</p>
+    <p class="review-date">posté le 11/1/1111</p>
+  </div>
+</div>
+<p>reviews (3flex aligned)</p>
+</div>
+<footer>site de merde</footer>
 </body>
 </html>
